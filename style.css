@@ -10,22 +10,38 @@ body {
   display: flex;
   font-family: sans-serif;
   justify-content: center;
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #32bee0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0f9b0f, #dbcfcf);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0f9b0f, #d3d0d0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
+}
+h1{
+  text-align:center ;
+  color: rgb(54, 40, 28);
+  font-size: 200%;
+  padding-top: 10%;
+ 
+}
+h2{
+  text-align:center ;
+  color: rgba(247, 14, 14, 0.87);
+  font-size: 200%;
+  padding-top: 10%;
+ font-size: 400%;
+ 
 }
 
 .container {
   height: 100%;
   
   background: orange;
-  padding-top: 25px;
+  padding-top: 0px;
+  align-self: center;
   
-  margin: 20px;
+  margin: 10px;
   /* padding: 50px; */
-  border-radius: 25px;
+  border-radius: 65px;
 }
 
 .title {
@@ -39,10 +55,10 @@ body {
 .status-action {
   display: flex;
   margin-top: 25px;
-  font-size: 25px;
+  font-size: 20px;
   justify-content: space-around;
   height: 30px;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 #upercase{
@@ -66,8 +82,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 15px;
-  margin-top: 50px;
+  grid-gap: 10px;
+  margin-top: 40px;
 }
 
 .game-cell {
@@ -76,8 +92,8 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  height: 160px;
-  width: 160px;
+  height: 130px;
+  width: 130px;
 }
 
 .x,
@@ -87,13 +103,13 @@ body {
 
 .x::after {
   content: '×';
-  font-size: 200px;
+  font-size: 100px;
 }
 
 .o::after {
   content: '○';
   color: #F2EBD3;
-  font-size: 225px;
+  font-size: 100px;
 }
 
 .won::after {
@@ -112,11 +128,11 @@ body {
   }
 
   .x::after {
-    font-size: 150px;
+    font-size: 100px;
   }
 
   .o::after {
-    font-size: 175px;
+    font-size: 105px;
   }
 }
 
@@ -136,7 +152,7 @@ body {
   }
 
   .o::after {
-    font-size: 125px;
+    font-size: 105px;
   }
 }
 
